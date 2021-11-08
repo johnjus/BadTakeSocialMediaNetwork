@@ -16,12 +16,14 @@ In this social network, everyone is friends with everyone. As a user, you will b
 
 List of features ready and TODOs for future development
 
-- Users can submit reimbursement requests.
-- Users can visit exterior websites related to the website theme application (League of Legends).
-- Users can view the status of previously submitted requests.
-- Administrators can view all past requests from all users.
-- Administrators can approve or deny pending requests.
-- Users and Administrators can filter the status of the reimbursement.
+- Users can create an account.
+- Users can create a post.
+- Users can like a post.
+- Users can upload a picture in a post or for a profile picture
+- Users can check out other users profile.
+- Users can update their profile data.
+- Users can update their password if they forgot it.
+- Profanity filter implemented to prevent bad words.
 
 To-do list:
 
