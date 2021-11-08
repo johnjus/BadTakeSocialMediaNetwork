@@ -32,7 +32,7 @@ public class AccountDaoTest
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 		
     	Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 
     	Account actualAccount = 
     			accountDaoImpl.getMyAccount(username ,password);
@@ -55,7 +55,7 @@ public class AccountDaoTest
 
 		
 		Account expectedAccount = new Account(2, "test2", password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
     	Account actualAccount = 
     			accountDaoImpl.getAccountById(userId);
@@ -75,7 +75,7 @@ public class AccountDaoTest
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 
 		Account expectedAccount = new Account(2, "test2", password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
     	Account actualAccount = 
     			accountDaoImpl.getUserAccountByUsername("test2");
@@ -95,10 +95,10 @@ public class AccountDaoTest
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 
 		Account expectedAccount = new Account(2, "test2", password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
     	Account actualAccount = 
-    			accountDaoImpl.getMyAccountByEmailAndUsername("test2", "test2@gmail.com");
+    			accountDaoImpl.getMyAccountByEmailAndUsername("test2", "test2#gmail.com");
     	actualAccount.setMyComments(null);
     	actualAccount.setMyPosts(null);
     	actualAccount.setLikedPosts(null);

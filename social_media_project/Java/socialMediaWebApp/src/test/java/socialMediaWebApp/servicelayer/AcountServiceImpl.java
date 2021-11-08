@@ -42,9 +42,9 @@ public class AcountServiceImpl
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 		
     	Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	
     	when(accountDao.getMyAccount(username, password)).thenReturn(mockAccount);
     	
@@ -64,10 +64,10 @@ public class AcountServiceImpl
 
 		
 		Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
 		Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	
     	when(accountDao.getAccountById(userId)).thenReturn(mockAccount);
     	
@@ -86,10 +86,10 @@ public class AcountServiceImpl
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 
 		Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
 		Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	
     	when(accountDao.getUserAccountByUsername(username)).thenReturn(mockAccount);
     	
@@ -105,14 +105,14 @@ public class AcountServiceImpl
 	public void getMyAccountByEmailAndUsernameTest()
 	{
 		String username = "test2";
-		String email = "test2@gmail.com";
+		String email = "test2#gmail.com";
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 
 		Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
 		Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	
     	when(accountDao.getMyAccountByEmailAndUsername(username, email)).thenReturn(mockAccount);
     	

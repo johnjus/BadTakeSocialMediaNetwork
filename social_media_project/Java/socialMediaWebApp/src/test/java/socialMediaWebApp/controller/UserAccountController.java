@@ -50,9 +50,9 @@ public class UserAccountController
 		
 //		Set
     	Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 //    	Define
     	when(accountService.getMyAccount(username, password)).thenReturn(mockAccount);
     	
@@ -76,10 +76,10 @@ public class UserAccountController
 
 //		Set
 		Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
 		Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 //    	Defene mock
     	when(accountService.getAccountById(userId)).thenReturn(mockAccount);
     	
@@ -102,10 +102,10 @@ public class UserAccountController
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 
 		Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
 		Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	
     	when(accountService.getUserAccountByUsername(username)).thenReturn(mockAccount);
     	
@@ -124,14 +124,14 @@ public class UserAccountController
 	public void getMyAccountByEmailAndUsernameTest()
 	{
 		String username = "test2";
-		String email = "test2@gmail.com";
+		String email = "test2#gmail.com";
 		String password = "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3";
 
 		Account mockAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
 		
 		Account expectedAccount = new Account(2, username, password, null, 
-    			"test2@gmail.com", null, "oldname", "newlname", null, null);
+    			"test2#gmail.com", null, "oldname", "newlname", null, null);
     	
     	when(accountService.getMyAccountByEmailAndUsername(username, email)).thenReturn(mockAccount);
     	
