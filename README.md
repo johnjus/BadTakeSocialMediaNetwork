@@ -32,4 +32,4 @@ To-do list:
 
 # Getting Started 
 
-git clone 
+git clone https://github.com/johnjus/RevatureSocialNetwork.git
